@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yogeswari M. | Beginner Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Yogeswari M., B.Tech IT student and beginner full stack developer.">
+  <meta name="theme-color" content="#050505">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Decorative layers -->
+  <div class="bg" aria-hidden="true"><i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i></div>
+  <canvas id="fx" aria-hidden="true"></canvas>
+  <div class="cur-ring" id="curRing" aria-hidden="true"><i></i></div>
+  <div class="cur-dot" id="curDot" aria-hidden="true"></div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="brand">Yogeswari M.</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#internship">Internship</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#hackathons">Hackathons</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <span class="indicator" id="indicator" aria-hidden="true"></span>
+      </ul>
+      <button class="menu-btn" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== HOME ===== -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="status"><span class="dot"></span>B.Tech Information Technology student</p>
+          <h1 id="heroName" aria-label="Yogeswari M.">Yogeswari M.</h1>
+          <p class="role">Beginner Full Stack Developer</p>
+          <p class="lead hero-in">I am a B.Tech Information Technology student interested in Full Stack Development and Artificial Intelligence. I enjoy learning new technologies, improving my programming skills and building practical projects.</p>
+          <div class="btn-row hero-in">
+            <a class="btn btn-primary" href="#projects">Explore My Projects</a>
+          </div>
+        </div>
+        <!-- Three.js draws the 3D object into this canvas -->
+        <div class="scene" id="scene" aria-hidden="true"><canvas id="three"></canvas></div>
+      </div>
+      <a class="scroll-hint" href="#about" aria-label="Scroll to About"><span></span></a>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <h2 class="reveal">About Me</h2>
+        <div class="glass about-card reveal">
+          <p class="about-text">I am a B.Tech Information Technology student at IFET College of Engineering. I am interested in Full Stack Development and Artificial Intelligence. I enjoy learning programming concepts and applying them through practical projects. I have worked on academic and web-based projects and I am continuously improving my technical knowledge to grow as a developer.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="reveal">Technical Skills</h2>
+        <div class="skills-grid">
+          <div class="glass skill reveal" style="--d:0"><span class="badge">Py</span><h3>Python</h3></div>
+          <div class="glass skill reveal" style="--d:1"><span class="badge">&lt;/&gt;</span><h3>HTML</h3></div>
+          <div class="glass skill reveal" style="--d:2"><span class="badge">{ }</span><h3>CSS</h3></div>
+          <div class="glass skill reveal" style="--d:3"><span class="badge">Jv</span><h3>Java</h3></div>
+          <div class="glass skill reveal" style="--d:4"><span class="badge">AI</span><h3>Artificial Intelligence</h3></div>
+          <div class="glass skill reveal" style="--d:5"><span class="badge">ML</span><h3>Machine Learning</h3></div>
+          <div class="glass skill reveal" style="--d:6"><span class="badge">Git</span><h3>Git</h3></div>
+          <div class="glass skill reveal" style="--d:7"><span class="badge">Np</span><h3>NumPy</h3></div>
+          <div class="glass skill reveal" style="--d:8"><span class="badge">Pd</span><h3>Pandas</h3></div>
+          <div class="glass skill reveal" style="--d:9"><span class="badge">SQL</span><h3>SQL</h3></div>
+          <div class="glass skill reveal" style="--d:10"><span class="badge">Fl</span><h3>Flask</h3></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="reveal">Projects</h2>
+        <div class="projects-grid">
+
+          <article class="glass project tilt reveal">
+            <div class="p-media" data-title="IronAI"><img src="assets/projects/ironai.svg" width="800" height="500" decoding="async" alt="IronAI desktop application mockup showing fabric image upload, detected fabric type, wrinkle level, and recommended ironing temperature and steam settings"></div>
+            <div class="p-body">
+              <span class="chip">Academic project</span>
+              <h3>IronAI</h3>
+              <p class="subtitle">An AI-Based Smart Fabric Ironing and Damage Prevention System</p>
+              <p>An AI-based smart ironing system designed to identify fabric types from images and recommend suitable ironing settings to help prevent fabric damage.</p>
+            </div>
+          </article>
+
+          <article class="glass project tilt reveal">
+            <div class="p-media" data-title="StudentRiskAI"><img src="assets/projects/studentriskai.svg" width="800" height="500" decoding="async" alt="StudentRiskAI interface mockup with an academic performance chart, a risk prediction result, student input features and machine learning analysis"></div>
+            <div class="p-body">
+              <h3>StudentRiskAI</h3>
+              <p class="subtitle">Student Academic Risk Prediction System</p>
+              <p>A machine learning-based application designed to predict student academic risk using relevant student information.</p>
+              <ul class="tags"><li>Python</li><li>Flask</li><li>Machine Learning</li><li>SQLite</li></ul>
+            </div>
+          </article>
+
+          <article class="glass project tilt reveal">
+            <div class="p-media" data-title="LocalBizAI"><img src="assets/projects/localbizai.svg" width="800" height="500" decoding="async" alt="LocalBizAI web dashboard mockup with invoice upload, recent invoice list, invoice details, AI-assisted processing steps and analytics chart"></div>
+            <div class="p-body">
+              <h3>LocalBizAI</h3>
+              <p class="subtitle">AI-Based Business Invoice Management Application</p>
+              <p>A web application designed to manage invoice uploads and business records with AI-assisted features.</p>
+              <ul class="tags"><li>Python</li><li>Flask</li><li>SQLite</li><li>AI integration</li></ul>
+            </div>
+          </article>
+
+          <article class="glass project tilt featured reveal">
+            <div class="p-media" data-title="Unified Assessment Platform"><img src="assets/projects/unified-assessment.svg" width="800" height="500" decoding="async" alt="Unified Assessment Platform interface mockup with course cards, exam management table, instructor panel and student results chart"></div>
+            <div class="p-body">
+              <span class="chip hot">Internship project</span>
+              <h3>Unified Assessment Platform</h3>
+              <p class="subtitle">OneYes Infotech Solutions Pvt. Ltd., Chennai</p>
+              <p>Internship project completed during my internship at OneYes Infotech Solutions Pvt. Ltd., Chennai. A web-based assessment platform designed to manage courses, examinations, instructors and student results in one system.</p>
+              <ul class="tags"><li>Login</li><li>Course</li><li>Exam</li><li>Instructor</li><li>Result</li></ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== INTERNSHIP ===== -->
+    <section id="internship" class="section">
+      <div class="container">
+        <h2 class="reveal">Internship Experience</h2>
+        <div class="glass intern reveal">
+          <div>
+            <h3>OneYes Infotech Solutions Pvt. Ltd.</h3>
+            <p class="subtitle">Chennai</p>
+            <p><strong>Role:</strong> Full Stack Development Intern</p>
+            <p><strong>Project:</strong> Unified Assessment Platform</p>
+          </div>
+          <div>
+            <p>During this internship I worked on the Unified Assessment Platform, a web-based system that brings login, course, exam, instructor and result management together in one system.</p>
+            <ul class="tags"><li>Login</li><li>Course</li><li>Exam</li><li>Instructor</li><li>Result</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="reveal">Education</h2>
+        <div class="timeline">
+          <div class="glass edu reveal">
+            <h3>B.Tech – Information Technology</h3>
+            <p>IFET College of Engineering</p>
+            <p class="meta">CGPA: 8.6/10 &middot; Status: Pursuing</p>
+          </div>
+          <div class="glass edu reveal">
+            <h3>12th Standard</h3>
+            <p>Presidency Higher Secondary School (ELITE), Puducherry</p>
+            <p class="meta">State Board – 80%</p>
+          </div>
+          <div class="glass edu reveal">
+            <h3>10th Standard</h3>
+            <p>Sri Ramachandra Vidhyalaya High School, Ariyur, Puducherry</p>
+            <p class="meta">State Board – 85%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CERTIFICATIONS =====
+         To add a "View Certificate" button later: copy the certificate PDF into a new
+         folder assets/certificates/ and add a link button inside the card that points to it. -->
+    <section id="certifications" class="section">
+      <div class="container">
+        <h2 class="reveal">Certifications</h2>
+        <div class="cert-grid">
+          <article class="glass cert reveal" style="--d:0">
+            <span class="badge">NET</span>
+            <h3>CCNA: Introduction to Networks</h3>
+            <p>Cisco Networking Academy, offered by IFET College of Engineering</p>
+            <p class="meta">August 2025</p>
+          </article>
+          <article class="glass cert reveal" style="--d:1">
+            <span class="badge">FS</span>
+            <h3>Full Stack Development Internship Certificate</h3>
+            <p>OneYes Infotech Solutions Pvt. Ltd.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HACKATHONS ===== -->
+    <section id="hackathons" class="section">
+      <div class="container">
+        <h2 class="reveal">Hackathon Participation</h2>
+        <div class="glass hack reveal" id="hackCard">
+          <div class="counter"><span class="count" id="hackCount" data-to="5">5</span><small>hackathons</small></div>
+          <div>
+            <p class="about-text">Participated in 5 hackathons, gaining exposure to problem-solving, teamwork and innovative ideas.</p>
+            <div class="nodes" aria-hidden="true"><i style="--d:0"></i><i style="--d:1"></i><i style="--d:2"></i><i style="--d:3"></i><i style="--d:4"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="reveal">Contact Me</h2>
+        <div class="contact-grid">
+          <div class="glass contact-card reveal">
+            <h3>Email</h3>
+            <a class="mail-link" href="mailto:yogeswarimurugan23@gmail.com">yogeswarimurugan23@gmail.com</a>
+            <div class="btn-row">
+              <a class="btn btn-primary" href="mailto:yogeswarimurugan23@gmail.com">Send an Email</a>
+              <button class="btn btn-ghost" id="copyEmail" type="button">Copy Email</button>
+            </div>
+            <p class="meta" id="copyStatus" role="status" aria-live="polite"></p>
+          </div>
+          <div class="glass contact-card reveal">
+            <h3>LinkedIn</h3>
+            <a class="mail-link small" href="https://linkedin.com/in/yogeswari-murugan-bb4759365" target="_blank" rel="noopener noreferrer">linkedin.com/in/yogeswari-murugan-bb4759365</a>
+            <div class="btn-row">
+              <a class="btn btn-ghost" href="https://linkedin.com/in/yogeswari-murugan-bb4759365" target="_blank" rel="noopener noreferrer">Open LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <p>&copy; <span id="year"></span> Yogeswari M.</p>
+      <p class="footer-links">
+        <a href="https://linkedin.com/in/yogeswari-murugan-bb4759365" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:yogeswarimurugan23@gmail.com">Email</a>
+      </p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <!-- Three.js (3D hero). The site still works without it. -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
